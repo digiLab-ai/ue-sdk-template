@@ -3,22 +3,18 @@
 Start using the SDK with an easy-to-use template and set-up guide. The template is accompanied by a detailed set of example workflows.
 
 ## Contents
-- `template.ipynb` contains a simple template notebook to get up and running with the UE SDK.
-- `sdk_example` contains an SDK example, containing a number of commonly-used workflows.
+- `template.ipynb` contains a simple template notebook to get up and running with the UE SDK
+- `sdk_example` contains an SDK example, containing a number of commonly-used workflows
 
 ## Set-up
 
 ### 1. Clone Repository
 
-Firstly, the contents of this repository should be cloned locally.
+Firstly, the contents of this repository should be cloned to your device.
 
-If you have git installed on your device:
-- Select the green '<> Code' button and clone this repository to your desired directory
-    - `git clone ...` (HTTPS; SSH options)
-    - `gh repo clone ...` (CLI option)
-
-If you don't:
-- Simply 'Download Zip'
+- Select the green '<> Code' button
+- If you have git installed on your device, clone the repository in your desired directory
+- Otherwise, 'Download Zip' into the desired location
 
 ### 2. Configure Python Environment
 
@@ -26,7 +22,7 @@ The Uncertainty Engine SDK requires that you run Python version `>=3.10, <3.13`
 
 Here is our guide to environment set-up iuf you are new to virtual environments:
 
-Firstly, ensure that the approproate Python version is available on your device (cd ...). Navigating to the sdk-example folder cloned in the previous step, enter the follow into the CMD line to create a virtual environment:
+Firstly, ensure that the approproate Python version is available on your device. Navigating to the sdk-example folder cloned in the previous step in your terminal, enter the follow into th create a virtual environment:
 
 - For Mac/Linux:
     `python3.11 -m venv .venv`
@@ -40,7 +36,7 @@ This should create a folder in your version of the project called `.venv` with P
 - For Windows:
     `.venv/Scripts/activate`
 
-Each line in the terminal should now be preceeded by (.venv) on each subsequent line. If this does not change immediately, you may need to restart your terminal.
+Once activated, each line in the terminal should now be preceeded by (.venv) on each subsequent line. If this does not change immediately, you may need to restart your terminal.
 
 The benefit of using a virtual environment is that Python library inclusion and versioning can be contained to this project without affecting other projects on your device. 
 
@@ -60,4 +56,6 @@ In your terminal, with your virtual environment activated (each line should be p
     - `UE_PASSWORD=""`
 - Save this file
 
-Security Note: for those sharing notebooks via git, be sure to add a .gitignore to the project repo and to include .env. This should ensure your credentials are not shared directly with other collaborators.
+NB: for those sharing notebooks via git, be sure to add a .gitignore to the project repo and to include .env. This will ensure that your credentials are not shared with other collaborators.
+
+*You should now be sufficiently setup to run cells in the template and/or example notebooks available in this repository. Once you are familiar with the SDK interface, delete any unwanted notebooks (e.g., sdk_example.ipynb) and start building your own workflows*
