@@ -63,7 +63,7 @@ Finally, open template.ipynb and ensure that .venv is selectable as the notebook
 
 ### 3. Install Dependencies 
 
-Withe the virtual environment activated, install the required dependencies:
+Withe the virtual environment activated, install the required project dependencies:
 
 ```bash
 pip install -r requirments.txt
@@ -90,6 +90,6 @@ UE_PASSWORD=""
 
 ### Next Steps
 You are now ready to run the notebooks in this repository.
-- Start with template.ipynb for a basic workflow
-- Explore sdk_example for more advanced usage patterns
+- Start with `template.ipynb` to get started
+- Explore `sdk_example.ipynb` for more example workflow creation and execution
 Once you're comfortable with the SDK, you can remove example notebooks and begin building your own workflows.
