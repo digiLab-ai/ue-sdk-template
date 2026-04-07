@@ -1,6 +1,6 @@
 # Uncertainty Engine SDK Template
 
-This guide will help you get started with the Uncertainty Engine (UE) SDK using a simple template and step-by-step setup instructions. The repository also includes example workflows to help you understand common usage patterns.
+This guide will help you get started with the Uncertainty Engine (UE) SDK using a simple template and step-by-step setup instructions. The template is accompanied by a detailed example that utlises some commonly used workflows.
 
 ## Contents
 - `template.ipynb` – A simple notebook template to get up and running with the UE SDK  
