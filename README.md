@@ -50,7 +50,7 @@ source .venv/bin/activate
 
 #### Windows
 ```bash
-.venv\Scripts\activate
+.venv/Scripts/activate
 ```
 
 Once activated, your terminal prompt should be prefixed with (.venv). If not, try restarting your terminal.
