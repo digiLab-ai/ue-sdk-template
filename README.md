@@ -1,61 +1,95 @@
 # Uncertainty Engine SDK Template
 
-Start using the SDK with an easy-to-use template and set-up guide. The template is accompanied by a detailed set of example workflows.
+This guide will help you get started with the Uncertainty Engine (UE) SDK using a simple template and step-by-step setup instructions. The repository also includes example workflows to help you understand common usage patterns.
 
 ## Contents
-- `template.ipynb` contains a simple template notebook to get up and running with the UE SDK
-- `sdk_example` contains an SDK example, containing a number of commonly-used workflows
+- `template.ipynb` – A simple notebook template to get up and running with the UE SDK  
+- `sdk_example` – Example workflows demonstrating commonly used SDK functionality  
 
-## Set-up
+---
 
-### 1. Clone Repository
+## Set-up Guide
 
-Firstly, the contents of this repository should be cloned to your device.
+### 1. Clone the Repository
 
-- Select the green '<> Code' button
-- If you have git installed on your device, clone the repository in your desired directory
-- Otherwise, 'Download Zip' into the desired location
+First, clone this repository to your local machine:
 
-### 2. Configure Python Environment
+- Click the green **“<> Code”** button on the repository page  
+- If you have Git installed, clone the repository into your desired directory  
+- Otherwise, select **“Download ZIP”** and extract it to your chosen location  
 
-The Uncertainty Engine SDK requires that you run Python version `>=3.10, <3.13`
+---
 
-Here is our guide to environment set-up iuf you are new to virtual environments:
+### 2. Configure Your Python Environment
 
-Firstly, ensure that the approproate Python version is available on your device. Navigating to the sdk-example folder cloned in the previous step in your terminal, enter the follow into th create a virtual environment:
+The Uncertainty Engine SDK requires **Python version `>=3.10, <3.13`**.
 
-- For Mac/Linux:
-    `python3.11 -m venv .venv`
-- For Windows:
-    `py -3.11 -m venv .venv`
+If you're new to virtual environments, follow these steps:
 
-This should create a folder in your version of the project called `.venv` with Python version 3.11 (or any other compatible version of your choosing) used as the interpretor. To activate this virtual environment, enter the following in your terminal:
+1. Ensure a compatible Python version (e.g. 3.11) is installed on your system  
+2. Open a terminal and navigate to the `sdk_example` folder from the cloned repository  
+3. Create a virtual environment:
 
-- For Mac/Linux:
-    `source .venv/bin/activate`
-- For Windows:
-    `.venv/Scripts/activate`
+#### Mac/Linux
+```bash
+python3.11 -m venv .venv
+```
 
-Once activated, each line in the terminal should now be preceeded by (.venv) on each subsequent line. If this does not change immediately, you may need to restart your terminal.
+#### Windows
+```bash
+py -3.11 -m venv .venv
+```
 
-The benefit of using a virtual environment is that Python library inclusion and versioning can be contained to this project without affecting other projects on your device. 
+This will create a `.venv` folder using Python 3.11 (or another compatible version of your choice).
 
-Lastly, open the template.ipynb file in your cloned project and ensure that you can select `.venv` as a kernel
+#### Activate the Virtual Environment
+#### Mac/Linux
+```bash
+source .venv/bin/activate
+```
+
+#### Windows
+```bash
+.venv\Scripts\activate
+```
+
+Once activated, your terminal prompt should be prefixed with (.venv). If not, try restarting your terminal.
+
+*Why use a virtual environment?*
+It isolates project dependencies, preventing conflicts with other Python projects on your system.
+Finally, open template.ipynb and ensure that .venv is selectable as the notebook kernel.
+
+--- 
 
 ### 3. Install Dependencies 
 
-In your terminal, with your virtual environment activated (each line should be preceeded by (.venv)), install the project dependencies using the following command:
+Withe the virtual environment activated, install the required dependencies:
 
-`pip install -r requirments.txt`
+```bash
+pip install -r requirments.txt
+```
+
+---
 
 ### 4. Set UE Credentials
 
-- Create a new file in the project directory called `.env'
-- On separate lines set:
-    - `UE_USERNAME=""`
-    - `UE_PASSWORD=""`
-- Save this file
+1. Create a new file in the project directory called `.env'
+2. Add the following, along with your UE credentials:
+```bash
 
-NB: for those sharing notebooks via git, be sure to add a .gitignore to the project repo and to include .env. This will ensure that your credentials are not shared with other collaborators.
+UE_USERNAME=""
+UE_PASSWORD=""
 
-*You should now be sufficiently setup to run cells in the template and/or example notebooks available in this repository. Once you are familiar with the SDK interface, delete any unwanted notebooks (e.g., sdk_example.ipynb) and start building your own workflows*
+```
+3. Save this file
+
+> #### Important
+> If you are sharing this repository (e.g. via Git), ensure that .env is included in your .gitignore file to prevent exposing credentials.
+
+---
+
+### Next Steps
+You are now ready to run the notebooks in this repository.
+- Start with template.ipynb for a basic workflow
+- Explore sdk_example for more advanced usage patterns
+Once you're comfortable with the SDK, you can remove example notebooks and begin building your own workflows.
