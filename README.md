@@ -66,7 +66,7 @@ Finally, open template.ipynb and ensure that .venv is selectable as the notebook
 Withe the virtual environment activated, install the required project dependencies:
 
 ```bash
-pip install -r requirments.txt
+pip install -r requirements.txt
 ```
 
 ---
