@@ -1,5 +1,7 @@
 *.png
 .*
 !.gitignore
+data/
+!.env.template
 *.csv
 .env

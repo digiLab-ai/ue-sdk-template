@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 ### 4. Set UE Credentials
 
-1. Create a new file in the project directory called `.env'
+1. Create a new file in the project directory called `.env' (or rename the .env.template file - retaining the contents)
 2. Add the following, along with your UE credentials:
 ```bash
 
@@ -81,7 +81,17 @@ UE_USERNAME=""
 UE_PASSWORD=""
 
 ```
-3. Save this file
+3. [IF APPLICABLE] Add custom environment details:
+
+```bash
+
+cognito_user_pool_client_id=""
+core_api=""
+region=""
+resource_api=""
+
+```
+4. Save this file
 
 > #### Important
 > If you are sharing this repository (e.g. via Git), ensure that .env is included in your .gitignore file to prevent exposing credentials.
