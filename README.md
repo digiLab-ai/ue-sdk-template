@@ -17,7 +17,7 @@ This guide will help you get started with the Uncertainty Engine (UE) SDK using 
 
 ## Contents
 - `template.ipynb` – A simple notebook template to get up and running with the UE SDK  
-- `sdk_example` – Example workflows demonstrating commonly used SDK functionality  
+- `sdk_example.ipynb` – Example workflows demonstrating commonly used SDK functionality  
 
 ---
 
