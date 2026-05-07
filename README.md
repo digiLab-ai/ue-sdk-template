@@ -1,3 +1,6 @@
+> ## Disclaimer
+> ⚠️ This template has been created for the purposes of supporting SDK onboarding workshops. It is currently in draft state and will likely be subject to future change. Any questions  that arise should be directed to cs@digilab.ai
+
 # Uncertainty Engine SDK Template
 
 ## **Overview**
