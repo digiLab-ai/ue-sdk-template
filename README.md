@@ -15,7 +15,7 @@ Datasets used in workflows executed via the SDK are ultimately stored within a p
 
 This guide will help you get started with the Uncertainty Engine (UE) SDK using a simple template and step-by-step setup instructions. The template is accompanied by a detailed example that utlises some commonly used workflows.
 
-## Contents
+### Contents
 - `template.ipynb` – A simple notebook template to get up and running with the UE SDK  
 - `sdk_example.ipynb` – Example workflows demonstrating commonly used SDK functionality  
 
