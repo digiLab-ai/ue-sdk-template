@@ -1,5 +1,18 @@
 # Uncertainty Engine SDK Template
 
+## **Overview**
+
+This section provides an overview of how to access digiLab's Uncertainty Engine via the Software Development Kit (SDK). As an alternative to the Graphical User Interface (GUI), the SDK is designed for users who are comfortable writing in Python and would prefer to use a notebook to interact with the Uncertainty Engine.
+
+The SDK can also offer a number of advantages, including:
+
+- Ease of **automated resource integration** (i.e., a simple Python script can be written to navigate on-device directories)
+- Freedom of **bespoke visualisation** of Uncertainty Engine outputs
+- Efficiency of looping **repetitive tasks** (e.g., running a model training workflow - varying the model configuration each iteration)
+- Traceability of **version control**, to manage collaborative projects (using git)
+
+Datasets used in workflows executed via the SDK are ultimately stored within a project space as a resource. The workflows themselves (e.g., train classifier) and the product of workflows (e.g., a GP regressor model) can be saved to project spaces via the SDK. This is reflected in the Uncertainty Engine front-end (i.e. the GUI), which can be incredibly useful for showcasing complex workflows to stakeholders with a range of technical proficiency.
+
 This guide will help you get started with the Uncertainty Engine (UE) SDK using a simple template and step-by-step setup instructions. The template is accompanied by a detailed example that utlises some commonly used workflows.
 
 ## Contents
